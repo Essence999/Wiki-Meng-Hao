@@ -1,0 +1,146 @@
+body{
+    /* Background */
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* Fonte */
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: white;
+    font-size: 18px;
+
+    /* Display Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #09062a;
+    width: 370px;
+    border: 2px solid rgb(5, 121, 194);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha horizontalmente por causa do flex direction column */
+    gap: 10px;
+}
+
+.minhas-informacoes img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.nome{
+    font-size: 26px;
+}
+
+.cargo{
+    font-size: 20px;
+    color: rgb(151, 201, 255);
+}
+
+.conteudo{
+    background-color: #2a2153;
+    margin-top: 15px;
+}
+
+.abas{
+    display: flex;
+}
+
+.abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+.abas img{
+    width: 30px;
+}
+
+.aba.selecionado{
+    background-color: #2a2153;
+}
+
+.aba {
+    background-color: #09062a;
+}
+
+.aba:hover{
+    background-color: #3c376f;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: flex;
+}
+
+.sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.descricao{
+    font-size: 18px;
+    max-height: 330px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+span{
+    color: #8fdce4;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 330px;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 25px;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fandom{
+    background-color: rgb(230, 134, 0);
+}
+
+.spirit{
+    background-color: rgb(110, 0, 228);
+}
+
+.immortal{
+    background-color: rgb(255, 17, 0);
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.6;
+}
